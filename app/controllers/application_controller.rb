@@ -12,7 +12,6 @@ class App < Sinatra::Base
         details = params
         @team = details["team"]
         @members = @team["members"]
-        puts @members
         erb :team
     end
 
